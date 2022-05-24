@@ -1,0 +1,226 @@
+<!-- This page is modified from Yunhe Wang`s homepage. See https://github.com/YunheWang/HomePage. -->
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+
+  <title>Yanjie Huang's Homepage</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Yanjie Huang is currently a master student at Beijing Institute of Technology.">
+  <meta name="keywords" content="Yanjie Huang, 黄彦杰, huangyanjie, Yanjie, Huang, Computer Vision, System on Chip, PKU, BIT">
+  <meta name="author" content="Yanjie Huang" />
+
+  <link rel="stylesheet" href="w3.css">
+
+  <style>
+  .w3-bar a {font-family: "Roboto", sans-serif}
+  body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+  </style>
+  <link rel="shortcut icon" href="images/test.ico">
+
+</head>
+
+
+<div class="w3-container"> 
+<!-- Sidebar/menu -->
+<nav class="w3-bar w3-light-grey w3-collapse w3-top" style="z-index:3" id="mySidebar">  
+  <div class="w3-text-black w3-large" style="font-weight:bold">
+    <a href="#home" class="w3-bar-item w3-button">Home</a>
+    <a href="#publications" class="w3-bar-item w3-button">Research & Publications</a>
+    <a href="#projects" class="w3-bar-item w3-button">Projects & Competitions</a>
+    <a href="#service" class="w3-bar-item w3-button">Services</a>
+    <a href="#award" class="w3-bar-item w3-button">Awards & Scholarships</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24">YANJIE</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+  </div>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:150px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+<!-- The Home Section -->
+    <br>
+    <div class="w3-container w3-center w3-padding-32" id="home">
+    <br>
+      <h1>Yanjie Huang</h1>
+        <!-- <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;max-width:600px"> -->
+        <p class="w3-justify"> 
+          Currently I am a master student at School of Integrated Circuits and Electronics, <a href="https://www.bit.edu.cn/">Beijing Institute of Technology (BIT)</a>, where I work on System on Chip (SoC) design, advised by Assist. Prof. <a href="https://ieeexplore.ieee.org/author/37292854700">Weijiang Wang</a>  . In 2021/03~2022/03, I was an intern at <a href="http://59.108.48.34/tiki/home/?baaiecbiekngdjec">Multimedia Information Processing Lab (MIPL)</a> at Peking University, advised by Assist. Prof. <a href="http://www.csyangliu.com/"">Yang Liu</a></a>, doing research on computer vision. I did my bachelor at School of Information and Electronics, Beijing Institute of Technology, majoring in Electronics and Information Engineering.
+        </p>
+        <p class="w3-center">
+          <a href="mailto:1120180647@bit.edu.cn">Email</a> &nbsp/&nbsp
+          <a href="https://scholar.google.com/citations?hl=zh-CN&user=cynIDVYAAAAJ">Google Scholar</a> &nbsp/&nbsp
+          <a href="https://github.com/YanjieHuang-ECE/">Github</a>
+        </p>
+        </tbody></table>
+  </div>
+
+
+  
+ <!-- The Publications Section -->
+  <div class="w3-container w3-light-grey w3-padding-32"" id="publications">
+    <h2>Research&Publications</h2>
+
+    <h4><li>CVPR 2022: Weakly Supervised Temporal Sentence Grounding with Gaussian-based Contrastive Proposal Learning</li></h4>
+    <br>
+    <p style="text-align: center;">
+    <img style="width:100%;" src="images/cvpr2022.PNG"> 
+    </p>
+    <br>
+      Minghang Zheng , <strong>Yanjie Huang</strong> , Qingchao Chen , Yuxin Peng , Yang Liu
+    <br>
+    <a style="color: #447ec9" href="https://minghangz.github.io/publication/cpl/">Project Page</a> | <a style="color: #447ec9" href="https://minghangz.github.io/uploads/CPL/CPL_paper.pdf">Paper</a> | <a style="color: #447ec9" href="https://minghangz.github.io/publication/cpl/#">Cite</a> | <a style="color: #447ec9" href="https://github.com/minghangz/cpl">Code</a> 
+    <p>
+      This work was done during my internship at MIPL.
+    </p>
+    <p class="w3-justify">
+     
+      Temporal sentence grounding aims to detect the most salient moment corresponding to the natural language query from untrimmed videos. As labeling the temporal boundaries is labor-intensive and subjective, the weakly-supervised methods have recently received increasing attention. Most of the existing weakly-supervised methods generate the proposals by sliding windows, which are content-independent and of low quality. Moreover, they train their model to distinguish positive visual-language pairs from negative ones randomly collected from other videos, ignoring the highly confusing video segments within the same video. In this paper, we propose Contrastive Proposal Learning(CPL) to overcome the above limitations. Specifically, we use multiple learnable Gaussian functions to generate both positive and negative proposals within the same video that can characterize the multiple events in a long video. Then, we propose a controllable easy to hard negative proposal mining strategy to collect negative samples within the same video, which can ease the model optimization and enables CPL to distinguish highly confusing scenes. The experiments show that our method achieves state-of-the-art performance on Charades-STA and ActivityNet Captions datasets. 
+    
+    </p>
+    <br>
+    <h4><li>AAAI 2022: Weakly Supervised Video Moment Localization with Contrastive Negative Sample Mining</li></h4>
+    <br>
+    <p style="text-align: center;">
+      <img style="width:100%;" src="images/aaai2022.PNG"> 
+    </p>
+    <br>
+      Minghang Zheng , <strong>Yanjie Huang</strong> , Qingchao Chen , Yang Liu
+    <br>
+    <a style="color: #447ec9" href="https://minghangz.github.io/publication/cnm/">Project Page</a> | <a style="color: #447ec9" href="https://minghangz.github.io/uploads/CNM/CNM_paper.pdf">Paper</a> | <a style="color: #447ec9" href="https://minghangz.github.io/publication/cnm/#">Cite</a> | <a style="color: #447ec9" href="https://github.com/minghangz/cnm">Code</a> | <a style="color: #447ec9" href="https://minghangz.github.io/uploads/CNM/CNM_poster.pdf">Poster</a>
+    <p>
+      This work was done during my internship at MIPL. <strong>This method has been patented in China.</strong> 
+    </p>
+    <p class="w3-justify">
+     
+      Video moment localization aims at localizing the video segments which are most related to the given free-form natural language query. The weakly supervised setting, where only video level description is available during training, is getting more and more attention due to its lower annotation cost. Prior weakly supervised methods mainly use sliding windows to generate temporal proposals, which are independent of video content and low quality, and train the model to distinguish matched video-query pairs and unmatched ones collected from different videos, while neglecting what the model needs is to distinguish the unaligned segments within the video. In this work, we propose a novel weakly supervised solution by introducing Contrastive Negative sample Mining (CNM). Specifically, we use a learnable Gaussian mask to generate positive samples, highlighting the video frames most related to the query, and consider other frames of the video and the whole video as easy and hard negative samples respectively. We then train our network with the Intra-Video Contrastive loss to make our positive and negative samples more discriminative. Our method has two advantages: (1) Our proposal generation process with a learnable Gaussian mask is more efficient and makes our positive sample higher quality. (2) The more difficult intra-video negative samples enable our model to distinguish highly confusing scenes. Experiments on two datasets show the effectiveness of our method.
+    
+    </p>
+
+  </div>
+  <!-- The Projects&Competitions Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h2>Projects & Competitions</h2>
+ 
+        <h4><li>RoboMaster University Championship (RMUC) 2020 & 2021 </li></h4>
+        <br>
+        <p style="text-align: center;">
+          <img style="width:80%;" src="images/RMUC.PNG"> 
+        </p>
+        <br>
+        <p class="w3-justify">
+        <p>UAV project leader & Core member of Operation and Test Group at BIT Dream Chaser Robotics Team.</p>
+        <p>1.Responsible for training and maintanous of UAV (<a href="https://www.dji.com/cn/matrice600-pro">DJI M600 pro with E-2000 power system</a>). </p>
+        <p>2.Adjust DJI <a href="https://www.dji.com/cn/a3">A3</a> & A3-pro flight control system.</p>
+        <p>3.Monitor the battlefield and provide location information to help tactical command during matches.</p>
+        </p> 
+        <br>
+        <h4><li>Development of Computer Vision Based Data Acquisition for TSOP</li></h4>
+        <br>
+        <p style="text-align: center;">
+          <img style="width:50%;" src="images/NCSU.PNG"> 
+        </p>
+        <br>
+        <p class="w3-justify">
+        This project was done during the 2020 GEARS Online Summer Program, North Carolina State University, supervised by Prof. <a href="https://www.mae.ncsu.edu/people/apmazzol/">Andre Mazzoleni</a>.
+        <p>
+        <p>1.Use cellphones to collect visual data for TSOP (Tethered Systems Observation Platform). Develope and validate a robust Object Detection Algorithm (ODA) in MATLAB.</p>
+        <p>2.Utilize Stereo Camera Calibrator App to remove lens distortion and reprojection errors. Convert the RGB image into binary image and label the connected region to get the smallest boxes.</p>
+        <p>3.Figure out the relationship between different coordinates to convert the pixel coordinates into world coordinates. Reconstruct space using inverse perspective transformation and test ODA.</p>  
+           
+        </p>
+        </p>  
+
+        <br>
+        <h4><li>Algorithm Design and Hardware Realization of Digitial Recognition based on Convolutional Neural Network</li></h4>
+        <br>
+        <p style="text-align: center;">
+          <img style="width:80%;" src="images/Undergrad.PNG"> 
+        </p>
+        <br>
+        <p class="w3-justify">
+        <p>This project is my undergraduate graduation project, supervised by Assist. Prof. Weijiang Wang. The majority of work is listed as follows:</p>
+        <p>1.The hardware algorithm guided by the pipeline theory is proposed, enabling the method to load data and do calculation at the same time in the convolution and pooling layers of CNN, improving computing efficiency. </p>
+        
+        <p>2.The domestic PGL22G FPGA implementation platform with less power consumption is used, and the hardware realization algorithm is deployed. Additionally, compared with other methods using High Level Synthesis (HLS), this work is highly portable. Moreover, the algorithm is designed with floating-point decimal conversion, so that it can complete the multiplication operation without using a Digital Signal Processor (DSP). The experiments demonstrate that the hardware implementation algorithm can accelerate the software algorithm efficiently with fewer resources. Compared with the method using larger embedded platform which accelerates the same software network, its power consumption and Look Up Table (LUT) resource usage decrease.</p>
+        
+        <p>3.Use Python and Verilog HDL, together with the OV5640 webcam module and the HDMI display module, completing the construction of a CNN-based software and hardware collaborative handwritten digital recognition system, implementing continuous real-time recognition of handwritten digital images. </p>
+        </p> 
+
+        
+        
+
+  </div>
+
+<!-- The Services Section -->
+  <div class="w3-container w3-light-grey w3-padding-32" id="service">
+    <h2>Services</h2>
+      <p><li> Teaching Assistant of the course 'Integrated Circuit Design Practice I'. Mainly about using VHDL language to design basic circuits including frequency divider and 16 bit adder. 
+  </div>
+
+  <!-- The Awards Section -->
+  <div class="w3-container w3-padding-32" id="award">
+    <h2>Awards & Scholarships</h2>
+    <p><li> 2021, 1st Prize in RoboMaster University Championship of North China Division</p>
+    <p><li> 2020, 1st Prize in Beijing Integrated Circuit Design Competition</p>
+    <p><li> 2020, 2nd Prize in National RoboMaster University Championship</p>
+    <p><li> 2021, Mitacs Globalink Research Internship Scholarship</p>
+    <p><li> 2020, Jianglu Scholarship (Rank 1)</p>
+    <p><li> 2018, Jianglu Scholarship (Rank 2)</p>
+  </div>  
+
+  <div class="w3-light-grey w3-center w3-padding-24">
+
+   Welcome to visit my homepage! Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+
+
+  </div>
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
