@@ -19,9 +19,14 @@
   <link rel="stylesheet" href="w3.css">
 
   <style>
-  .w3-bar a {font-family: "Roboto", sans-serif}
+  /* .w3-bar a {font-family: "Roboto", sans-serif} */
+  .w3-sidebar a {font-family: "Roboto", sans-serif}
   body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </style>
+
+
+
+
   <link rel="shortcut icon" href="images/bar.ico">
 
 </head>
@@ -29,24 +34,28 @@
 
 <div class="w3-container">  
   <body class="w3-content" style="max-width:1200px">
-  <nav class="w3-bar w3-light-grey w3-top w3-large" id="mySidebar" style="display: flex; justify-content: center; max-width: 1200px; margin: 0 auto; padding: 0;font-weight:bold"> 
+  <nav class="w3-sidebar w3-light-grey w3-top w3-large" id="mySidebar" style="display: flex; justify-content: center; max-width: 1200px; padding:0.01em 16px;font-weight:bold;margin-left: -16px"> 
     <a href="#home" class="w3-bar-item w3-button" style="margin: 0 5px;">Home</a>  
-    <a href="#publications" class="w3-bar-item w3-button" style="margin: 0 5px;">Research & Publications</a>  
-    <a href="#projects" class="w3-bar-item w3-button" style="margin: 0 5px;">Projects & Competitions</a>  
+    <a href="#publications" class="w3-bar-item w3-button" style="margin: 0 5px;">Research</a>  
+    <a href="#projects" class="w3-bar-item w3-button" style="margin: 0 5px;">Projects</a>  
     <a href="#services" class="w3-bar-item w3-button" style="margin: 0 5px;">Services</a>  
-    <a href="#awards" class="w3-bar-item w3-button" style="margin: 0 5px;">Scholarships & Awards</a>  
+    <a href="#awards" class="w3-bar-item w3-button" style="margin: 0 5px;">Awards</a>  
   </nav>  
 </div>
 
-<!-- Top menu on small screens -->
-<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <div class="w3-bar-item w3-padding-24">YANJIE</div>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
-  </div>
-</header>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!--  Top menu on small screens-->
+<!-- <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge"> -->
+  <!-- <div class="w3-bar-item w3-padding-24">YANJIE</div> -->
+  <!-- <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded" onclick="w3_open()"><b>≡</b></a> -->
+  <!-- </div> -->
+<!-- </header>
+
+<!-- Overlay effect when opening sidebar on small screens 
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div> -->
+
+
+
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main">
@@ -55,15 +64,14 @@
   <div class="w3-hide-large" style="margin-top:83px"></div>
 
 
-<div class="w3-container w3-center w3-padding-32" id="home">  
-  <div style="display: flex; align-items: flex-start;"> <!-- Insert flex container -->  
-    <div style="flex: 0 0 auto; margin-right: 20px;"> <!-- Pic container -->  
-      <img style="width: 60%; max-width: 320px" alt="profile photo" src="images/Avatar.jpg"> 
+<div class="w3-container w3-center" id="home">  
+  <div class="flex-container" style="margin-top: 40px">
+    <div style="flex: 0 0 auto; margin-top: 20px"> 
+      <img style="width: 60%; max-width: 320px" alt="profile photo" src="images/Avatar_New.png"> 
       <h2>Yanjie Huang</h2>   
-    </div>  
-    <div style="flex: 1;margin-top: 40px"> <!-- text container，flex: 1 occupy the rest of space-->  
-      
-      <p class="w3-justify">
+    </div>   
+    <div class="text-container" style="margin-top: 20px"> 
+      <h6 class="w3-justify">
         Currently I am a master student at School of Integrated Circuits and Electronics, 
         <a href="https://english.bit.edu.cn/">Beijing Institute of Technology (BIT)</a>, 
         where I work on System on Chip (SoC) design, under the guidance of Associate Professor <a href="https://ieeexplore.ieee.org/author/37292854700">Weijiang Wang</a>. 
@@ -71,38 +79,36 @@
         advised by Assistant Professor <a href="http://www.csyangliu.com/"">Yang Liu</a></a>, 
         conducting research on computer vision. I completed my bachelor`s degree at School of Information and Electronics, Beijing Institute of Technology, 
         majoring in Electronic Information Engineering.
-      </p>
-    <br>  
+      </h6>
       <p class="w3-center">  
-          <a href="mailto:yanjiehuang@bit.edu.cn">Email</a> &nbsp/&nbsp
-          <a href="https://scholar.google.com/citations?hl=zh-CN&user=cynIDVYAAAAJ">Google Scholar</a> &nbsp/&nbsp
-          <a href="https://github.com/YanjieHuang-ECE/">Github</a> 
+        <a href="mailto:yanjiehuang@bit.edu.cn">Email</a> &nbsp/&nbsp
+        <a href="https://scholar.google.com/citations?hl=zh-CN&user=cynIDVYAAAAJ">Google Scholar</a> &nbsp/&nbsp
+        <a href="https://github.com/YanjieHuang-ECE/">Github</a> 
       </p>  
     </div>  
   </div>  
-</div>
-  
-
+</div>  
 
  <!-- The Publications Section -->
-  <div class="w3-container w3-light-grey w3-padding-32"" id="publications">
-    <h2>Research&Publications</h2>
+  <div class="w3-container w3-light-grey" id="publications">
+    <h2>Research & Publications</h2>
     <h3>Hardware Acceleration of Direction-of-arrival Estimation Algorithms</h3>
     <p class="w3-justify">
     <p>1.Developed a parallel hardware structure for efficient computation of covariance matrices, achieving low latency and high throughput through parallel computing techniques.</p>
     <p>2.Devised a reconfigurable hardware structure for QR decomposition of general square matrices. With logic reuse and parallel computing techniques, it performed robustly across matrices of varying sizes.</p>
     <p>3.Engineered a high precision, low delay hardware acceleration structure for the ESPRIT algorithm, compatible with different parameters, validated through extensive experimental analysis. The work has been submitted to <strong>IEEE Transactions on Very Large Scale Integration Systems (TVLSI)</strong>.</p>
     </p>
+    <br>
     <h3>Weakly Supervised Video Moment Localisation</h3>
     <p>
       The following work was done during my internship at MIPL, PKU.
     </p>
     <h4><li>CVPR 2022: Weakly Supervised Temporal Sentence Grounding with Gaussian-based Contrastive Proposal Learning</li></h4>
-    <br>
+    <!-- <br> -->
     <p style="text-align: center;">
     <img style="width:100%;" src="images/cvpr2022.PNG"> 
     </p>
-    <br>
+    <!-- <br> -->
       Minghang Zheng , <strong>Yanjie Huang</strong> , Qingchao Chen , Yuxin Peng , Yang Liu
     <br>
     <a style="color: #447ec9" href="https://minghangz.github.io/publication/cpl/">Project Page</a> | <a style="color: #447ec9" href="https://minghangz.github.io/uploads/CPL/CPL_paper.pdf">Paper</a> | <a style="color: #447ec9" href="https://minghangz.github.io/publication/cpl/#">Cite</a> | <a style="color: #447ec9" href="https://github.com/minghangz/cpl">Code</a> 
@@ -112,13 +118,12 @@
     <p class="w3-justify"> 
       Temporal sentence grounding aims to detect the most salient moment corresponding to the natural language query from untrimmed videos. As labeling the temporal boundaries is labor-intensive and subjective, the weakly-supervised methods have recently received increasing attention. Most of the existing weakly-supervised methods generate the proposals by sliding windows, which are content-independent and of low quality. Moreover, they train their model to distinguish positive visual-language pairs from negative ones randomly collected from other videos, ignoring the highly confusing video segments within the same video. In this paper, we propose Contrastive Proposal Learning(CPL) to overcome the above limitations. Specifically, we use multiple learnable Gaussian functions to generate both positive and negative proposals within the same video that can characterize the multiple events in a long video. Then, we propose a controllable easy to hard negative proposal mining strategy to collect negative samples within the same video, which can ease the model optimization and enables CPL to distinguish highly confusing scenes. The experiments show that our method achieves state-of-the-art performance on Charades-STA and ActivityNet Captions datasets.     
     </p>
-    <br>
     <h4><li>AAAI 2022: Weakly Supervised Video Moment Localization with Contrastive Negative Sample Mining</li></h4>
-    <br>
+    <!-- <br> -->
     <p style="text-align: center;">
       <img style="width:100%;" src="images/aaai2022.PNG"> 
     </p>
-    <br>
+    <!-- <br> -->
       Minghang Zheng , <strong>Yanjie Huang</strong> , Qingchao Chen , Yang Liu
     <br>
     <a style="color: #447ec9" href="https://minghangz.github.io/publication/cnm/">Project Page</a> | <a style="color: #447ec9" href="https://minghangz.github.io/uploads/CNM/CNM_paper.pdf">Paper</a> | <a style="color: #447ec9" href="https://minghangz.github.io/publication/cnm/#">Cite</a> | <a style="color: #447ec9" href="https://github.com/minghangz/cnm">Code</a> | <a style="color: #447ec9" href="https://minghangz.github.io/uploads/CNM/CNM_poster.pdf">Poster</a>
@@ -131,47 +136,42 @@
     
     </p>
 
-
-
   </div>
   <!-- The Projects&Competitions Section -->
-  <div class="w3-container w3-padding-32" id="projects">
+  <div class="w3-container" id="projects">
     <h2>Projects & Competitions</h2>
-
         <h4><li>High-speed Image Test and Evaluation System</li></h4>
-        <br>
+        <!-- <br> -->
         <p style="text-align: center;">
           <img style="width:90%;" src="images/ImgTest.PNG"> 
         </p>
-        <br>
+        <!-- <br> -->
         <p class="w3-justify">
         <p>This project is supervised by Associate Professor Weijiang Wang.</p>
       	<p>1.Lead the design of a comprehensive software and hardware test platform using FPGA and C# for 16 sensors, facilitating efficient communication over TCP protocol.</p>
         <p>2.Implement a DDR module to receive 16-bit image data from sensors and transmit them to the software platform, achieving image storage and restoration at a resolution of 2,048*2,048.</p>
         <p>3.According to the customized protocol, the hardware test platform communicates with 16 sensors through serial ports in polling, and the software test platform handles command decoding and log saving.</p>
         </p>  
-        <br>
 
         <h4><li>Active Calibration System Design</li></h4>
-        <br>
+        <!-- <br> -->
         <p style="text-align: center;">
           <img style="width:85%;" src="images/Calibrator.PNG"> 
         </p>
-        <br> 
+        <!-- <br>  -->
         <p class="w3-justify">
         <p>This project is supervised by Associate Professor Weijiang Wang. </p>
         <p>1.Implement a fully automatic calibration process along with data reception and storage for communication, including a 4G mobile network and a Beidou communication module for unattended remote control. Based on the Intel i5 processor, real-time data storage of up to 5GB/s is achieved.</p>
         <p>2.Participate in hardware and software design of the digital control part of the calibrator, and realize functions including system monitoring, parameter configuration, radio frequency debugging, servo debugging, and true north calibration, etc.</p>
         <p>3.Design and maintain the FPGA hardware system (Algorithm board and System board) and DSP according to requirements, along with the software system using Linux and MFC-based upper machine.</p>
         </p>  
-        <br>
 
         <h4><li>Algorithm Design and Hardware Realization of Digitial Recognition based on Convolutional Neural Network</li></h4>
-        <br>
+        <!-- <br> -->
         <p style="text-align: center;">
           <img style="width:90%;" src="images/Undergrad.PNG"> 
         </p>
-        <br>
+        <!-- <br> -->
         <p class="w3-justify">
         <p>This project is my undergraduate graduation project, supervised by Associate Professor Weijiang Wang. <strong>This project has been awarded as a key graduation project of BIT.</strong> </p>
         <p>1.The hardware algorithm guided by the pipeline theory is proposed, enabling the method to load data and do calculations at the same time in the convolution and pooling layers of CNN, improving computing efficiency. </p>
@@ -182,58 +182,52 @@
         </p> 
 
         <h4><li>Development of Computer Vision Based Data Acquisition for TSOP</li></h4>
-        <br>
+        <!-- <br> -->
         <p style="text-align: center;">
           <img style="width:60%;" src="images/NCSU.PNG"> 
         </p>
-        <br>
+        <!-- <br> -->
         <p class="w3-justify">
         <p>This project was done during the 2020 GEARS Online Summer Program, <a href="https://www.ncsu.edu/">North Carolina State University(NCSU)</a>, supervised by Associate Professor <a href="https://www.mae.ncsu.edu/people/apmazzol/">Andre Mazzoleni</a>.</p>
         <p>1.Use cellphones to collect visual data for TSOP (Tethered Systems Observation Platform). Develop and validate a robust Object Detection Algorithm (ODA) using MATLAB`s Image Processing Toolbox.</p>
         <p>2.Utilize the Stereo Camera Calibrator App to remove lens distortion and reprojection errors. Convert the RGB image into binary image and label the connected region to get the smallest boxes.</p>
         <p>3.Figure out the relationship between different coordinates to convert the pixel coordinates into world coordinates. Reconstruct space using inverse perspective transformation and test ODA.</p>  
         </p>  
-        <br>
 
- 
         <h4><li>RoboMaster University Championship (RMUC) 2020 & 2021 </li></h4>
-        <br>
+        <!-- <br> -->
         <p style="text-align: center;">
           <img style="width:80%;" src="images/RMUC.PNG"> 
         </p>
         <br>
-        <p class="w3-justify">
+        <!-- <p class="w3-justify"> -->
         <p>UAV project leader & Core member of Operation and Test Group at BIT Dream Chaser Robotics Team.</p>
         <p>1.Responsible for training, testing and maintenance of UAV (<a href="https://www.dji.com/support/product/matrice600-pro">DJI M600 pro with E-2000 power system</a>) for <a href="https://www.robomaster.com/en-US">RoboMaster</a>.</p>
         <p>2.Adjust DJI <a href="https://www.dji.com/a3">A3</a> & A3-pro flight control systems.</p>
         <p>3.Monitor the competition terrain, provide support, and offer location information to help tactical command during matches.</p>
         </p> 
-        <br>
-
         
   </div>
 
 <!-- The Services Section -->
-  <div class="w3-container w3-light-grey w3-padding-32" id="services">
-    <h2>Services</h2>     
-      <p><li> Contribution to the textbook <i>Digital SoC Design, Verification and Examples</i> (ISBN 978-7-111-73243-3).
-      <p><li> Teaching Assistant for the course 'Integrated Circuit Design Practice I'.
-      <p><li> Review for CVPR 2023.  
+  <div class="w3-container w3-light-grey" id="services">
+    <h2>Services</h2>  
+      <p><li> Contribution to the textbook <i>Digital SoC Design, Verification and Examples</i> (ISBN 978-7-111-73243-3).</p> 
+      <p><li> Teaching Assistant for the course 'Integrated Circuit Design Practice I'.</p> 
+      <p><li> Review for CVPR 2023. </p>  
   </div>
 
   <!-- The Awards Section -->
-  <div class="w3-container w3-padding-32" id="awards">
+  <div class="w3-container" id="awards">
     <h2> Scholarships & Awards</h2>
     <p><li> 2022, Special Scholarship for Graduate Students, BIT</p>
     <p><li> 2021, Mitacs Globalink Research Internship Scholarship</p>
-    <p><li> 2020, Jianglu Scholarship (<strong>1/10</strong> in BIT)</p>
-    <p><li> 2018, Jianglu Scholarship (<strong>2/10</strong> in BIT)</p>
     <p><li> 2021, 1st Prize in RoboMaster University Championship of North China Division</p>
     <p><li> 2020, 1st Prize in Beijing Integrated Circuit Design Competition</p>
     <p><li> 2020, 2nd Prize in National RoboMaster University Championship</p>
   </div>  
 
-  <div class="w3-light-grey w3-center w3-padding-24">
+  <div class="w3-container w3-center w3-padding-24 w3-light-grey">
 
    Welcome to visit my homepage! Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>.</br>
   
