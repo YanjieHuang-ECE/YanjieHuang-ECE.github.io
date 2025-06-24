@@ -72,7 +72,7 @@
     </div>   
     <div class="text-container" style="margin-top: 20px"> 
       <h6 class="w3-justify">
-        Currently I am a master student at School of Integrated Circuits and Electronics, 
+        Currently I am a master's graduate at School of Integrated Circuits and Electronics, 
         <a href="https://english.bit.edu.cn/">Beijing Institute of Technology (BIT)</a>, 
         where I work on System on Chip (SoC) design, under the guidance of Associate Professor <a href="https://ieeexplore.ieee.org/author/37292854700">Weijiang Wang</a>. 
         From March 2021 to March 2022, I interned at <a href="http://39.108.48.32/mipl/yuxinpeng/">Multimedia Information Processing Lab (MIPL)</a> at Peking University, 
@@ -93,12 +93,18 @@
   <div class="w3-container w3-light-grey" id="publications">
     <h2>Research & Publications</h2>
     <h3>Hardware Acceleration of Direction-of-arrival Estimation Algorithms</h3>
-    <p><strong>The work has been submitted to IEEE Sensors Journal (JSEN)</strong>.</p>
-    <p class="w3-justify">
-    <p>1.Developed a parallel hardware structure for efficient computation of covariance matrices, achieving low latency and high throughput through parallel computing techniques.</p>
-    <p>2.Devised a reconfigurable hardware structure for QR decomposition of general square matrices. With logic reuse and parallel computing techniques, it performed robustly across matrices of varying sizes.</p>
-    <p>3.Engineered a high precision, low delay hardware acceleration structure for the ESPRIT algorithm, compatible with different parameters, validated through extensive experimental analysis. </p>
-    </p>
+    <h4><li>IEEE JSEN 2025: Scalable Hardware Architecture for High-Throughput Implementation of ESPRIT Algorithm</li></h4>
+     <!-- <br> -->
+     <p style="text-align: center;">
+      <img style="width:85%;" src="images/JSEN.PNG"> 
+      </p>
+      <!-- <br> -->
+      <strong>Yanjie Huang</strong> , Weijiang Wang , Chengbo Xue , Rongkun Jiang, Hua Dang, Shiwei Ren
+      <br>
+      <a style="color: #447ec9" href="https://ieeexplore.ieee.org/document/11011306">Paper & Cite</a>
+      <p class="w3-justify"> 
+        Estimating signal parameter via rotational invariance technique (ESPRIT) algorithm is a high-performance method for direction of arrival (DOA) estimation. Its most cumbersome aspect is performing eigenvalue decomposition twice, particularly with general square matrices. Current implementations lack flexibility in configuring the number of array elements, signal sources, and snapshots at the same time. To tackle these challenges, we propose a scalable hardware acceleration scheme for the QR decomposition algorithm on a Field Programmable Gate Array (FPGA). Our QR Decomposition (QRD) module leverages orientation displacement, parallel computing, and logic reuse to enhance speed and generality. Building upon this foundation, a reconfigurable design scheme with a parallel covariance matrix computation module for ESPRIT is proposed to increase calculation speed and throughput. Our ESPRIT implementation supports up to 26 array elements, 25 signal sources, and 2,048 snapshots. As evidenced by experiments, the root mean squared error (RMSE) of the QRD module and ESPRIT implementation achieve 0.02 and 0.04° respectively. On average, when the number of array elements, signal sources, and snapshots are set to 4, 1, 64 and 8, 1, 128 individually, our ESPRIT implementation completes DOA estimation in 22.04 μs and 60.50 μs, with throughput of 45,372 and 16,529 separately. In comparison with CPU implementations, our FPGA implementations offer up to 88.66% and 89.84% time savings for QRD and ESPRIT respectively.    
+      </p>
     <br>
     <h3>Weakly Supervised Video Moment Localisation</h3>
     <p>
