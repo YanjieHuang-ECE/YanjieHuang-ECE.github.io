@@ -88,7 +88,8 @@
       <p class="w3-center">  
         <a href="mailto:y.huang25@imperial.ac.uk">Email</a> &nbsp/&nbsp
         <a href="https://scholar.google.com/citations?hl=zh-CN&user=cynIDVYAAAAJ">Google Scholar</a> &nbsp/&nbsp
-        <a href="https://github.com/YanjieHuang-ECE/">Github</a> 
+        <a href="https://github.com/YanjieHuang-ECE/">Github</a> &nbsp/&nbsp
+        <a href="https://orcid.org/0009-0000-6227-3010">ORCID</a> 
       </p>  
     </div>  
   </div>  
@@ -115,6 +116,23 @@
     <p>
       The following work was done during my internship at MIPL, PKU.
     </p>
+
+    <h4><li>IEEE TPAMI 2025: Weakly and Single-Frame Supervised Temporal Sentence Grounding With Gaussian-Based Contrastive Proposal Learning</li></h4>
+    <!-- <br> -->
+    <p style="text-align: center;">
+    <img style="width:90%;" src="images/TPAMI.PNG"> 
+    </p>
+    <!-- <br> -->
+      Minghang Zheng , <strong>Yanjie Huang</strong> , Qingchao Chen , Yuxin Peng , Yang Liu
+    <br>
+    <a style="color: #447ec9" href="https://ieeexplore.ieee.org/document/11301624">Paper & Cite</a>
+    <p>
+
+    </p>
+    <p class="w3-justify"> 
+      Temporal sentence grounding aims to localize moments corresponding to language queries from videos. As labeling the temporal boundaries is cumbersome and subjective, the weakly-supervised methods have received increasing attention. Most of the existing weakly-supervised methods generate proposals by sliding windows, which are content-independent and of low quality. Besides, they train their model to distinguish positive visual-language pairs from negative ones randomly collected from other videos, ignoring the highly confusing video segments within the same video. In this paper, we propose Contrastive Proposal Learning (CPL) to overcome the above limitations. Specifically, we use multiple learnable asymmetric Gaussian functions to generate both positive and negative proposals within the same video. Then, we propose a controllable, easy-to-hard negative proposal mining strategy to collect negative samples within the same video, which enables CPL to distinguish highly confusing scenes. Finally, we propose an extension of the proposal generation algorithm to explore the use of low-cost single-frame annotation and achieve a balance between annotation burden and grounding performance. Our CPL can be applied to both MIL-based and reconstruction-based mainstream frameworks and achieves state-of-the-art performance on Charades-STA, ActivityNet Captions, and DiDeMo datasets.
+
+
     <h4><li>CVPR 2022: Weakly Supervised Temporal Sentence Grounding with Gaussian-based Contrastive Proposal Learning</li></h4>
     <!-- <br> -->
     <p style="text-align: center;">
@@ -125,7 +143,7 @@
     <br>
     <a style="color: #447ec9" href="https://minghangz.github.io/publication/cpl/">Project Page</a> | <a style="color: #447ec9" href="https://minghangz.github.io/uploads/CPL/CPL_paper.pdf">Paper</a> | <a style="color: #447ec9" href="https://minghangz.github.io/publication/cpl/#">Cite</a> | <a style="color: #447ec9" href="https://github.com/minghangz/cpl">Code</a> 
     <p>
-    <strong>The extension of this work has been submitted to IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI).</strong> 
+    
     </p>
     <p class="w3-justify"> 
       Temporal sentence grounding aims to detect the most salient moment corresponding to the natural language query from untrimmed videos. As labeling the temporal boundaries is labor-intensive and subjective, the weakly-supervised methods have recently received increasing attention. Most of the existing weakly-supervised methods generate the proposals by sliding windows, which are content-independent and of low quality. Moreover, they train their model to distinguish positive visual-language pairs from negative ones randomly collected from other videos, ignoring the highly confusing video segments within the same video. In this paper, we propose Contrastive Proposal Learning(CPL) to overcome the above limitations. Specifically, we use multiple learnable Gaussian functions to generate both positive and negative proposals within the same video that can characterize the multiple events in a long video. Then, we propose a controllable easy to hard negative proposal mining strategy to collect negative samples within the same video, which can ease the model optimization and enables CPL to distinguish highly confusing scenes. The experiments show that our method achieves state-of-the-art performance on Charades-STA and ActivityNet Captions datasets.     
